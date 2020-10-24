@@ -37,7 +37,7 @@
     <!--library versions-->
     <jsoup.version>1.8.2</jsoup.version>
     <spark.version>2.0.2</spark.version>
-    <guava.version>14.0.1</guava.version>
+    <guava.version>30.0-android</guava.version>
     <commons.exec.version>1.3</commons.exec.version>
     <commons.compress.version>1.9</commons.compress.version>
     <maven.plugin.api.version>3.0</maven.plugin.api.version>
@@ -458,7 +458,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <excludes combine.self="override"></excludes>
+          <excludes combine.self="override"/>
           <testExcludes combine.self="override">
             <testExclude>${pyspark.test.exclude}</testExclude>
           </testExcludes>
@@ -487,7 +487,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <excludes combine.self="override"></excludes>
+          <excludes combine.self="override"/>
           <testExcludes combine.self="override">
             <testExclude>${pyspark.test.exclude}</testExclude>
           </testExcludes>
